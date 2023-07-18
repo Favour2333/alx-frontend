@@ -1,0 +1,15 @@
+.card-services .card-title {
+  margin: 0; /* The margin on all sides should be none at all */
+}
+
+.card-services a {
+  display: block; /* Have them render as block level elements */
+  padding: 2rem; /* Set the padding to 2x the root element */
+  background-color: var(--color-light-grey); /* Set the background color to the variable color-light-grey */
+}
+
+.card-services a:hover {
+  color: var(--color-white); /* Set the foreground color to the variable color-white */
+  background-color: var(--color-primary); /* Set the color of the background to the variable color-primary */
+  text-decoration: none; /* Text should not be decorated at all */
+}
