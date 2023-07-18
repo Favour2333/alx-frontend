@@ -1,0 +1,10 @@
+.footer-address {
+  color: var(--text-color); 
+}
+.social-link {
+  display: block; /* Style it so that it renders as a block element */
+}
+
+.social-link svg {
+  fill: var(--text-color); /* Fill in the color of the svg children with the text-color variable */
+}
