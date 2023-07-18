@@ -2,7 +2,7 @@
   --section-tagline-transform: uppercase;
 }
 .section-tagline {
-  font-family: var(--font-family-title);
-  text-transform: var(--section-tagline-transform);
-  font-weight: var(--font-weight-bold);
+  font-family: font-family-title;
+  --section-tagline-transform: uppercase;
+  font-weight: font-weight-bold;
 }
