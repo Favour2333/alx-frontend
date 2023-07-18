@@ -5,5 +5,5 @@ a:hover {
   text-decoration: underline;
 }
 a:active {
-  background-color: var(--color-light-grey);
+  background-color: color-light-grey;
 }
