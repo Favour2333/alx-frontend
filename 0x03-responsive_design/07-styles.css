@@ -1,0 +1,15 @@
+/*  media query for max-width: 480px */
+@media screen and (max-width: 480px) {
+  /* Target the html element */
+  html {
+    font-size: 57%;
+  }
+}
+
+/*  media query for min-width: 481px and max-width: 767px */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* Target the html element */
+  html {
+    font-size: 60%;
+  }
+}

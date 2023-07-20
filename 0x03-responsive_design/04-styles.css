@@ -1,0 +1,24 @@
+
+/* Navbar section, and inside the 767px media query */
+
+:root {
+  --nav-item-margin: 0;
+}
+
+/* In the selector for the navbar-menu class */
+.navbar-menu {
+  flex: 1;
+}
+
+/* Target the nav class in header class */
+header .nav {
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Target the checkbox in the menu-btn class */
+.menu-btn:checked ~ .nav {
+  max-height: 500px; /* Adjust this value as needed */
+}

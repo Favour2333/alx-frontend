@@ -1,0 +1,103 @@
+/* menu btn */
+/* Target menu-btn class inside header class */
+header .menu-btn {
+  display: none;
+}
+
+/* Target navbar-menu class when the menu-btn class element is checked */
+header .menu-btn:checked ~ .navbar-menu {
+  display: block;
+}
+
+/* Target nav class inside navbar-menu class when the menu-btn class element is checked */
+header .menu-btn:checked ~ .navbar-menu .nav {
+  max-height: 100%;
+  overflow: inherit;
+}
+
+/* At the end of the /* Section HERO section, create a new media query for max-width: 767px */
+@media screen and (max-width: 767px) {
+  /* Target the section-hero class */
+  .section-hero {
+    margin: -0.1rem 0;
+  }
+
+  /* Target the hero-homepage class */
+  .hero-homepage {
+    background-position: 85% 0;
+  }
+
+  /* Target the section-body class inside section-hero class */
+  .section-hero .section-body {
+    padding: 2rem;
+  }
+
+  /* Going back to the /* menu btn */ section */
+
+  /* Target the navicon class inside menu-icon class sibling to the menu-btn when it is checked and inside header class */
+  header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+
+  /* Target the before state of navicon class inside menu-icon class sibling to the menu-btn when it is checked and inside header class element */
+  header .menu-btn:checked ~ .menu-icon .navicon::before {
+    transform: rotate(-45deg);
+  }
+
+  /* Target the after state of navicon class inside menu-icon class sibling to the menu-btn when it is checked and inside header class element */
+  header .menu-btn:checked ~ .menu-icon .navicon::after {
+    transform: rotate(45deg);
+  }
+
+  /* Target the before and after states of navicon class when inside menu-icon class sibling to the menu-btn class when it is checked and inside header class */
+  header .menu-btn:checked ~ .menu-icon .navicon::before,
+  header .menu-btn:checked ~ .menu-icon .navicon::after {
+    top: 0;
+  }
+}
+
+/* Create a new media query for max-width: 767px */
+@media screen and (max-width: 767px) {
+  /* Target the root and redefine the header-padding variable with 2rem 0 0 */
+  :root {
+    --header-padding: 2rem 0 0;
+  }
+
+  /* Target header class */
+  .header {
+    background: var(--color-black);
+  }
+
+  /* Target the header-container class */
+  .header-container {
+    flex-wrap: wrap;
+    padding: 0 1.5rem;
+  }
+
+  /* Target the menu-icon class inside the header class */
+  .header .menu-icon {
+    display: block;
+  }
+}
+
+/* Create a new media query for max-width: 480px */
+@media screen and (max-width: 480px) {
+  /* Target the header-logo class */
+  .header-logo {
+    flex-basis: 70%;
+  }
+}
+
+/* Create a new media query with min-width: 481px and max-width: 767px */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* Target the header-logo class */
+  .header-logo {
+    flex-basis: 79%;
+  }
+}
+
+/* Find the .header .menu-icon selector and add display: none; to hide the menu icon when we are on desktop mode. */
+.header .menu-icon {
+  display: none;
+}
+

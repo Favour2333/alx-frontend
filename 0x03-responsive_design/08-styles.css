@@ -1,0 +1,18 @@
+/* Create a new media query for max-width: 767px */
+@media screen and (maxwidth: 767px) {
+  /* Target the card-inner class inside the card-work class */
+  .card-work .card-inner{
+    --text-color: var(--color-white);
+    position: relative;
+  }
+
+  /* Target the card-title class inside the card-work class */
+  .card-work .card-title {
+    opacity: 1;
+  }
+
+  /* Target all a tags inside .card-work .card-title class */
+  .card-work .card-title a {
+    padding: 2rem 1rem 0 1rem;
+  }
+}

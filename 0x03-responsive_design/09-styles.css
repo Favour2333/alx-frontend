@@ -1,0 +1,20 @@
+/* media query for max-width: 767px */
+@media screen and (max-width: 767px) {
+  /* Create the root global selector to override a CSS variable */
+  :root {
+    --footer-padding: 5rem 2rem 1rem;
+  }
+
+  /* Target .social.nav inside the footer class and the footer-nav class inside the footer class */
+  .footer .social.nav,
+  .footer .footer-nav {
+    text-align: center;
+  }
+
+  /* Target the adjacent li to the li inside .social.nav and .footer-nav (to easily add left padding starting on the second li) */
+  
+  .footer .social.nav li + li,
+  .footer .footer-nav li + li {
+    padding-left: 2rem;
+  }
+}
