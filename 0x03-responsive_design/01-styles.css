@@ -1,0 +1,15 @@
+
+.hero-homepage {
+  background-image: url('hero-image.jpg');
+  background-position: 65% 8rem; 
+  background-size: 90rem auto; 
+  padding: 100px 0;
+}
+.hero-homepage .section-inner {
+  min-height: 35vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
